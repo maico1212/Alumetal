@@ -1,0 +1,15 @@
+
+
+
+<div>
+    <img class="card-img-top" src="{{card.imgUrl}}">
+    <div class="card-body">
+      <h5 class="card-title">{{card.title}} </h5>
+      <p class="card-text" *ngIf="card.flag" >{{card.cuerpo}} </p>
+    <!--  <a href="" class="btn btn-primary" *ngIf="card.band" >Ver más...</a>-->
+    <a href="" class="btn btn-primary" *ngIf="card.band" (click)="sendDataFunction()">Ver más...</a>
+    
+     
+    </div>
+</div>
+
